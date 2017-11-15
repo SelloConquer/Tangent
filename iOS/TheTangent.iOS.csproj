@@ -156,6 +156,9 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <Import Project="..\TheTangent.Shared\TheTangent.Shared.projitems" Label="Shared" Condition="Exists('..\TheTangent.Shared\TheTangent.Shared.projitems')" />
+  <Import Project="..\TheTangent.Services\TheTangent.Services.projitems" Label="Shared" Condition="Exists('..\TheTangent.Services\TheTangent.Services.projitems')" />
+  <Import Project="..\TheTangent.Data\TheTangent.Data.projitems" Label="Shared" Condition="Exists('..\TheTangent.Data\TheTangent.Data.projitems')" />
   <Import Project="..\TheTangent\TheTangent.projitems" Label="Shared" Condition="Exists('..\TheTangent\TheTangent.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />

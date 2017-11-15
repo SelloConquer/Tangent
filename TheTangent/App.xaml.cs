@@ -8,7 +8,7 @@ namespace TheTangent
         {
             InitializeComponent();
 
-            MainPage = new TheTangentPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

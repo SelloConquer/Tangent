@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections;
 using TheTagent.Data;
 using TheTagent.Shared;
+using TheTagent.Services;
 
 namespace TheTagent.Services
 {
@@ -13,8 +14,7 @@ namespace TheTagent.Services
     {
         public static async Task<TheTagent.Data.User> Login(string Username, string Password)
         {
-            Username = "pravin.gordhan";
-            Password = "pravin.gordhan";
+           
             TheTagent.Data.User user = null;
             try
             {
@@ -22,7 +22,7 @@ namespace TheTagent.Services
                 parameters.Add(new KeyValuePair<string, string>("username", Username));
                 parameters.Add(new KeyValuePair<string, string>("password", Password));
 
-                string response = await RestBase.Request("http://staging.tangent.tngnt.co/api-token-auth/", parameters);
+                string response = await RestBase.Request("http://staging.tangent.tngnt.co/api-token-auth/",parameters);
                 TheTagent.Data.RestResult result = JsonConvert.DeserializeObject<TheTagent.Data.RestResult>(response);
 
                 if (result != null)

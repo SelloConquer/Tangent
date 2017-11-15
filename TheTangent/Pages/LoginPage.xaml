@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TheTangent.LoginPage">
+
+        <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="#231F20">
+            <Entry x:Name="txtUsername" Text="" TextColor="White" Placeholder="Username" BackgroundColor="#3A383A" PlaceholderColor="#F69322"></Entry>
+              <Entry x:Name="txtPassword" Text="" TextColor="White" Placeholder="Password" IsPassword="true" BackgroundColor="#3A383A" PlaceholderColor="#F69322"></Entry>
+              <Button Clicked="btnLoginClicked" Text="Log In" TextColor="White" BackgroundColor="#F69322"></Button>
+        <Label x:Name="lblVersion" TextColor="White" FontSize="9"></Label>
+        </StackLayout>
+    
+</ContentPage>
